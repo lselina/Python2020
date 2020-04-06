@@ -1,0 +1,42 @@
+"""
+todo
+- write story with blanks
+- how to make inputs into nouns, verbs, adj, adv to put in blanks?
+- python image library? (pillow)
+- what if input is not 1 or 2? fix...
+"""
+
+adj1 = input("Enter an adjective: ")
+adj2 = input("Enter another adjective: ")
+adj3 = input("Enter another adjective: ")
+adj4 = input("Enter another adjective: ")
+adj5 = input("Enter another adjective: ")
+adj6 = input("Enter one more adjective: ")
+noun1 = input("Enter a noun: ")
+noun2 = input("Enter a plural noun: ")
+verb1 = input("Enter a verb: ")
+verb2 = input("Enter a past tense verb : ")
+feeling1 = input("Enter a feeling: ")
+feeling2 = input("Enter another feeling: ")
+
+while True:
+  try:
+    choice = int(input("Choose a random number to choose your story: "))
+  except ValueError:
+    print("Error, input is not a number.")
+  else:
+    break
+
+if choice % 2 == 1: #if odd
+  print("""STORY 1: MR FOORMAN AND THE DOGCOPTER
+  It was a very """ + adj1 + " day. Mr Foorman, divine lord of Foormanism, was " + verb1 + "ing when he encountered a wild " + adj2 + " " + adj3 + """ Dogcopter (dog + helicopter). Dogcopter was sitting on a """ + noun1 + " while he " + verb2 + """. 
+  Surprisingly, he started to """ + verb2 + """ and say \"Follow me, Mr Foorman!\" Mr Foorman felt """ + feeling1 + " and " + feeling2 + """ but obeyed.
+  Mr Foorman followed Dogcopter to a """ + adj4 + " " + adj5 + " factory. It smelled " + adj6 + """. \"What are we doing here, Dogcopter?\" Mr Foorman asked. 
+  Why did Dogcopter lead him there...?""")
+elif choice % 2 == 0: #if even
+  print("""STORY 2: STEVONNIE
+  That day, Steven went to a """ + noun1 + " in the morning to buy " + noun2 + ". He was " + verb1 + "ing while he " + verb2 + ". It was all part of his " + adj1 + " " + adj2 + """ plan to hang out with Connie. 
+  After a """ + adj3 + " walk to her house, Steven made loud " + adj4 + """ gestures to get Connie's attention. She was studying in her room. 
+  \"Connie!" Connieeeeee!\" Steven called. Connie peeked out the window and smiled when she recognized him. 
+  \"Hey, Steven,\" Connie replied. \"Hold on, I'll come right down.\" She laughed like a """ + adj5 + " " + noun1 + " as she appeared at the " + adj6 + """ door. She and Steven headed out. 
+  What were they going to do to hang out...?""")

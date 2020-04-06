@@ -1,0 +1,24 @@
+import random
+
+"""
+while roll = "yes":
+  value = random.randint(1,6)
+  print(value)
+"""
+
+#dictionary with key:value
+counters = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0} #how many times each number is rolled
+for i in range(100): #get random num 100 times
+  key = random.randint(1,6) #random num from 1-6
+  counters[key] = counters[key] + 1 
+  #ex. when a 3 is rolled, 3: value = 0 + 1
+
+print(counters)
+
+#array
+counters2 = [0, 0, 0, 0, 0, 0]
+for i in range(100):
+  key = random.randint(1,6)
+  counters2[key-1] = counters2[key-1] + 1
+
+print(counters2)
